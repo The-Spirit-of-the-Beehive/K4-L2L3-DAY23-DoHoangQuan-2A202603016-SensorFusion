@@ -12,9 +12,9 @@ from typing import Sequence
 
 import numpy as np
 
-# vi: from fusion_lab.workspace_support import get_tracking_params
-# vi: from fusion_lab.workspace_loader import load_workspace_module
-# vi: kalman = load_workspace_module("kalman")  # không dùng `import kalman`
+from fusion_lab.workspace_support import get_tracking_params
+from fusion_lab.workspace_loader import load_workspace_module
+kalman = load_workspace_module("kalman")  # không dùng `import kalman`
 
 
 def mahalanobis_distance(track: Any, meas: Any) -> float:

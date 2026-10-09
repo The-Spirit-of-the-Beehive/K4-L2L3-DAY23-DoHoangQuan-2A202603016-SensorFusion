@@ -4,10 +4,10 @@
 
 ## Thông tin học viên
 
-- Họ tên:
-- MSSV:
-- Email:
-- Link repo (fork):
+- Họ tên: Đỗ Hoàng Quân
+- MSSV: 2A202603016
+- Email: hoangquan11112004@gmail.com
+- Link repo (fork): https://github.com/The-Spirit-of-the-Beehive/K4-L2L3-DAY23-DoHoangQuan-2A202603016-SensorFusion
 - Commit hash nộp (`git rev-parse HEAD`):
 
 ## Tóm tắt kết quả
