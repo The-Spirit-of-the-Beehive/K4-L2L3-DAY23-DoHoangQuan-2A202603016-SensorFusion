@@ -8,7 +8,7 @@
 - MSSV: 2A202603016
 - Email: hoangquan11112004@gmail.com
 - Link repo (fork): https://github.com/The-Spirit-of-the-Beehive/K4-L2L3-DAY23-DoHoangQuan-2A202603016-SensorFusion
-- Commit hash nộp (`git rev-parse HEAD`): 
+- Commit hash nộp (`git rev-parse HEAD`): faf8ae4c0add0b14ec59eadd261d6fc542e66776
 
 ## Tóm tắt kết quả
 
@@ -100,15 +100,9 @@
 
 ## Khai báo sử dụng AI (bắt buộc)
 
-- **Công cụ đã dùng:** Claude / ChatGPT
-- **Dùng cho phần nào:**
-  - Hỗ trợ triển khai công thức toán học và kiểm tra ma trận trong Part E (`kalman.py`), Part F (`association.py`), Part G (`camera_fusion.py`), Part H (`track_management.py`).
-  - Hỗ trợ gỡ lỗi môi trường chạy trên Windows: giải quyết xung đột thư viện OpenMP kép (`libiomp5md.dll`) giữa Intel MKL và PyTorch bằng `$env:KMP_DUPLICATE_LIB_OK="TRUE"`, và lỗi mã hóa `UnicodeEncodeError` (CP1252) bằng `$env:PYTHONUTF8="1"`.
-- **Cách bạn đã kiểm tra lại:**
-  - Chạy toàn bộ 128 bài test tự động với `pytest student/tests` (pass 100%).
-  - Kiểm tra các biểu thức toán học của EKF (predict, update, Mahalanobis, Chi-square gate) và đối chiếu trực tiếp với tài liệu `docs/HUONG_DAN_KY_THUAT.md`.
-  - Chạy `fusion-run-lab --config student/config/paths.yaml --fusion compare --seed 0` trên toàn bộ 199 frame của segment Waymo mặc định, kiểm tra các bất biến `matches + ghosts == confirmed` và `matches + misses == valid_gt` trong `grade_run.log`.
-  - Chạy kiểm tra tính hợp lệ của bài nộp bằng `python tools/check_submission.py`.
+- Công cụ đã dùng (ChatGPT, Copilot, Claude, …): AI Studio
+- Dùng cho phần nào (hàm, câu hỏi, debug): Hỗ trợ triển khai công thức toán học và kiểm tra ma trận trong Part E (kalman.py), Part F (association.py), Part G (camera_fusion.py), Part H (track_management.py); gỡ lỗi môi trường OpenMP và bảng mã UTF-8 trên Windows.
+- Cách bạn đã kiểm tra lại (pytest, chạy Waymo, đối chiếu công thức): Chạy toàn bộ 128 tests với pytest student/tests (pass 100%), đối chiếu công thức với HUONG_DAN_KY_THUAT.md, chạy fusion-run-lab với seed 0 đủ 199 frame và kiểm tra invariant trong log, chạy check_submission.py.
 
 ## Checklist nộp
 
